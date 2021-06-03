@@ -1,13 +1,25 @@
-.text-lobster {
-    font-family: 'Lobster';
-    color: #ffffff;
-}
-
-footer,
-nav {
-    background-color: #373a3c;
-}
-
-.bg-rose {
-    background-color: #dc3545;
-}
+    body {
+        font-family: 'Cabin', sans-serif;
+    }
+    
+    .text-lobster {
+        font-family: 'Lobster', cursive;
+        color: #ffffff;
+    }
+    
+    footer,
+    nav {
+        background-color: #373a3c;
+    }
+    
+    .bg-rose {
+        background-color: #dc3545;
+    }
+    
+    .font {
+        font-family: cabin;
+    }
+    
+    .btn-danger {
+        width: 14.5625rem;
+    }
