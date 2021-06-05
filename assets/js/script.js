@@ -7,3 +7,18 @@ $(function() {
         }, 800);
     });
 });
+
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(document).ready(function() {
+    $("#btn_mail").click(function() {
+        // alert( "El correo fue enviado correctamente..." );
+        var section_alert = $('#myalert');
+
+        var nodo = alert("Enviado");
+        section_alert.append(nodo);
+
+    });
+});

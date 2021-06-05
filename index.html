@@ -13,15 +13,16 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark text-white mb-">
+    <nav id="top" class="navbar navbar-expand-lg navbar-dark text-white mb-">
         <div class="container">
             <a class="navbar-brand" href="#footer">
                 <h1 class="text-lobster">Ricomida</h1>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link">Inicio <span class="sr-only"></span></a>
@@ -44,17 +45,23 @@
         <div class="recipes-pizza border-bottom pb-5 border-dark">
             <div class="hero-pizza d-md-inline-flex">
                 <div class="title-pizza col-md-6 mx-md-0 px-md-0">
-                    <img src="assets/img/principal.jpg" class="card-img-top rounded mt-3" alt="pizza-chicago">
+                    <img src="assets/img/principal.jpg" class="grow card-img-top rounded mt-3" alt="pizza-chicago">
                 </div>
                 <div class="pizza-button col-md-6 mx-md-0 my-md-auto">
                     <h3 class="text-center border-bottom border-dark my-1 py-3 font-weight-bold text-md-left">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h3>
                     <p class="text-center font-weight-bold my-3 text-md-left">110 MIN / 6 A 8 PORCIONES</p>
+                    <div class="button-recipe text-center text-md-left">
+                        <button type="button" class="btn btn-ligth btn-outline-secondary py-2 px-1" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo" id="btn_mail">Enviar por correo</button>
+                        <button type="button" class="btn btn-ligth btn-outline-secondary py-2 px-1 button-margin" data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
+    <section id="myalert">
 
-
+    </section>
     <section id="ingredientes" class="container border-bottom border-dark pb-5 text-left mt-5">
         <div class="row">
             <div class="col-md-6">
@@ -94,36 +101,39 @@
     <section id="recetas" class="container my-5 ">
         <h2 class="display-5 font-weight-bold text-center my-4 text-dark">RECETAS RELACIONADAS</h2>
         <div class="card-deck">
-            <div class="card">
-                <img src="assets/img/recipe-card-1.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                <div class="card-body">
-                    <h5 class="card-text">PANQUEQUES CON MANJAR Y CREMA</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.</p>
 
+            <div class="card">
+                <img src="assets/img/recipe-card-1.png" alt="" class="grow hover-shadow cursor">
+                <div class="card-body">
+                    <figure>
+                        <h5 class="card-text">PANQUEQUES CON MANJAR Y CREMA</h5>
+
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.</figcaption>
+                    </figure>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/img/recipe-card-2.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                <img src="assets/img/recipe-card-2.png" alt="" class="grow hover-shadow cursor">
                 <div class="card-body">
-                    <h5 class="card-text">TIRAMISÚ</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.</p>
-
+                    <figure>
+                        <h5 class="card-text">TIRAMISÚ</h5>
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.
+                            <figcaption>
+                    </figure>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/img/recipe-card-3.PNG" alt="" class="hover-shadow cursor">
+                <img src="assets/img/recipe-card-3.PNG" alt="" class="grow hover-shadow cursor">
                 <div class="card-body">
-
-                    <h5 class="card-text">PLATEADA</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.</p>
-
+                    <figure>
+                        <h5 class="card-text">PLATEADA</h5>
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.</figcaption>
+                    </figure>
                 </div>
-
-            </div>
 
 
     </section>
-    <!--- input--->
+
     <section id="newsletter" class="container-fluid bg-rose  text-white p-3">
         <div class="container">
             <h3 class="display-5 font-weight-bold text-center  mt-5">
@@ -139,19 +149,11 @@
             </form>
         </div>
     </section>
-    <!--- cards--->
-
-
-
-
-
-
 
     <footer id="footer" class="text-center  p-3">
-        <a href="#header">
+        <a href="#top">
             <h3 class="text-lobster display-5">Ricomida</h3>
         </a>
-
     </footer>
 
     <!-- JQuery 3.3.1-->
