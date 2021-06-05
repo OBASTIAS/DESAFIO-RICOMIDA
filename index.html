@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <title>Ricomida</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4.5.2 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
+    <!-- Navbar -->
     <nav id="top" class="navbar navbar-expand-lg navbar-dark text-white mb-">
         <div class="container">
             <a class="navbar-brand" href="#footer">
@@ -41,8 +44,9 @@
             </div>
         </div>
     </nav>
-    <section id="header" class="container my-5 pt-5">
-        <div class="recipes-pizza border-bottom pb-5 border-dark">
+    <!-- Header -->
+    <section id="header" class="container mt-5 pt-5">
+        <div class="recipes-pizza border-dark">
             <div class="hero-pizza d-md-inline-flex">
                 <div class="title-pizza col-md-6 mx-md-0 px-md-0">
                     <img src="assets/img/principal.jpg" class="grow card-img-top rounded mt-3" alt="pizza-chicago">
@@ -55,17 +59,68 @@
                         <button type="button" class="btn btn-ligth btn-outline-secondary py-2 px-1 button-margin" data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+    <!-- alert -->
     <section id="myalert">
 
+
     </section>
+    <!-- carousel -->
+    <div class="container my-5 py-3 d-sm-none d-md-block border-bottom border-dark">
+        <div class="row">
+            <div class="col-12 pt-4 pb-5 ">
+                <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/img/slider-1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/slider-2.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/slider-3.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/slider-4.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/img/slider-5.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/slider-6.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/slider-7.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/slider-8.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- preparacion -->
     <section id="ingredientes" class="container border-bottom border-dark pb-5 text-left mt-5">
         <div class="row">
             <div class="col-md-6">
-                <p class="border-bottom border-dark w-25">INGREDIENTES</p>
+                <p id="dbclick-color" class="border-bottom border-dark w-25">INGREDIENTES</p>
                 <p><br>Masa <br><br></p>
                 <p>20 gr de levadura seca instantánea<br>1 cucharadita de azúcar<br>500 ml agua tibia <br> 100 ml aceite vegetal<br>cucharadas de aceite de oliva<br>65 gr harina de maíz fina (chuchoca)<br> 2 cucharadita de sal<br>625 gr harina<br>Salsa
                 </p>
@@ -76,7 +131,7 @@
                 <br>
             </div>
             <div class="col-md-6">
-                <p class="font-weith-bolder border-bottom border-dark w-25">PREPARACIÓN</p>
+                <p id="dbclick-color_2" class="font-weith-bolder border-bottom border-dark w-25 ">PREPARACIÓN</p>
                 <br>
                 <p class="text-justify">1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria
                     para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue). Poner la masa en un bol aceitado, tapar
@@ -97,43 +152,43 @@
             </div>
         </div>
     </section>
-
+    <!-- recetas -->
     <section id="recetas" class="container my-5 ">
-        <h2 class="display-5 font-weight-bold text-center my-4 text-dark">RECETAS RELACIONADAS</h2>
+        <h2 class="display-5 font-weight-bold text-center pb-5 text-dark">RECETAS RELACIONADAS</h2>
         <div class="card-deck">
-
             <div class="card">
                 <img src="assets/img/recipe-card-1.png" alt="" class="grow hover-shadow cursor">
                 <div class="card-body">
-                    <figure>
-                        <h5 class="card-text">PANQUEQUES CON MANJAR Y CREMA</h5>
-
-                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.</figcaption>
-                    </figure>
+                    <div>
+                        <h5 class="card-text show-panqueques"><a href="#" data-toggle="tooltip" title="Ver Más!" class="text-dark">PANQUEQUES CON MANJAR Y CREMA</a></h5>
+                        <p class="complete1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <img src="assets/img/recipe-card-2.png" alt="" class="grow hover-shadow cursor">
                 <div class="card-body">
-                    <figure>
-                        <h5 class="card-text">TIRAMISÚ</h5>
-                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.
-                            <figcaption>
-                    </figure>
+                    <div>
+                        <h5 class="card-text show-tiramisu"><a href="#" data-toggle="tooltip" title="Ver Más!" class="text-dark">TIRAMISÚ</a></h5>
+                        <p class="complete2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.
+                            <p>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <img src="assets/img/recipe-card-3.PNG" alt="" class="grow hover-shadow cursor">
                 <div class="card-body">
-                    <figure>
-                        <h5 class="card-text">PLATEADA</h5>
-                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.</figcaption>
-                    </figure>
+                    <div>
+                        <h5 class="card-text show-plateada"><a href="#" data-toggle="tooltip" title="Ver Más!" class="text-dark">PLATEADA</a></h5>
+                        <p class="complete3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore, perspiciatis ipsam in minima officia.</p>
+                    </div>
                 </div>
 
 
     </section>
 
+
+    <!-- newsletter -->
     <section id="newsletter" class="container-fluid bg-rose  text-white p-3">
         <div class="container">
             <h3 class="display-5 font-weight-bold text-center  mt-5">
@@ -149,7 +204,7 @@
             </form>
         </div>
     </section>
-
+    <!-- footer -->
     <footer id="footer" class="text-center  p-3">
         <a href="#top">
             <h3 class="text-lobster display-5">Ricomida</h3>

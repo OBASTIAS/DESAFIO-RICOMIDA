@@ -1,67 +1,85 @@
- body {
-     font-family: 'Cabin', sans-serif;
- }
- 
- .text-lobster {
-     font-family: 'Lobster', cursive;
-     color: #ffffff;
- }
- 
- footer,
- nav {
-     background-color: #373a3c;
- }
- 
- .bg-rose {
-     background-color: #dc3545;
- }
- 
- .font {
-     font-family: cabin;
- }
- 
- .btn-danger {
-     width: 14.5625rem;
- }
- /* HOVER */
- 
- .row:after {
-     content: "";
-     display: table;
-     clear: both;
- }
- 
- .column {
-     float: left;
-     width: 25%;
- }
- 
- img.hover-shadow {
-     transition: 0, 5s;
- }
- 
- .hover-shadow:hover {
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
- /*efecto imagenes */
- 
- .grow {
-     transition: all 0.3s ease-in-out;
-     transform: translateY(-15px);
- }
- 
- .grow:hover {
-     transform: scale(1, 1);
- }
- /* Invisible texto */
- 
- figcaption {
-     display: none;
-     transition: all 0.5s ease-in-out;
- }
- /* Visible texto */
- 
- figure:hover>figcaption {
-     display: block;
-     transition: all 0.5s ease-in-out;
- }
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.text-lobster {
+    font-family: 'Lobster', cursive;
+    color: #ffffff;
+}
+
+footer,
+nav {
+    background-color: #373a3c;
+}
+
+.bg-rose {
+    background-color: #dc3545;
+}
+
+.font {
+    font-family: cabin;
+}
+
+.btn-danger {
+    width: 14.5625rem;
+}
+
+
+/* HOVER */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+img.hover-shadow {
+    transition: 0, 5s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*efecto imagenes */
+
+.grow {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-15px);
+}
+
+.grow:hover {
+    transform: scale(1, 1);
+}
+
+
+/* Invisible texto */
+
+.carousel-indicators {
+    top: 200px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.complete1,
+.complete2,
+.complete3 {
+    display: none;
+}
+
+.show-tiramisu,
+.show-plateada,
+.show-panqueques {
+    cursor: pointer;
+}
